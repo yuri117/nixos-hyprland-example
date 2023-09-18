@@ -14,6 +14,8 @@
     users.wxndxrwhxreth3wx = import ../home-manager/home.nix;
   };
 
+  hardware.opengl.enable = true;
+
   networking.hostName = "nixos";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -28,8 +30,7 @@
   };
 
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "wxndxrwhxreth3wx";
+  services.getty.autologinUser = "wxndxrwhxreth3wx";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
