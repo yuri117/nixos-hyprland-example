@@ -7,10 +7,11 @@
   };
 
   home = {
-    username = "fulano";
-    homeDirectory = "/home/fulano";
+    username = "wxndxrwhxreth3wx";
+    homeDirectory = "/home/wxndxrwhxreth3wx";
   };
 
+  programs.firefox.enable = true;
   programs.neovim.enable = true;
   programs.home-manager.enable = true;
   programs.git.enable = true;
